@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "X Auto Night Mode",
+  "version": "1.0",
+  "description": "Automatically sets x.com theme based on your system theme.",
+  "permissions": ["cookies", "tabs", "scripting"],
+  "host_permissions": ["https://x.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["themeDetector.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon.png"
+  }
+}
