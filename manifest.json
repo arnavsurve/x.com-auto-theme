@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "X Auto Night Mode",
+  "name": "X Auto Theme Toggle",
   "version": "1.0",
   "description": "Automatically sets x.com theme based on your system theme.",
   "permissions": ["cookies", "tabs", "scripting"],
